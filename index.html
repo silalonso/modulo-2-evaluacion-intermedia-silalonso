@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adivina el número</title>
+    <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
@@ -13,16 +15,24 @@
     </header>
 
     <body>
+        <form action="/signup" method="post">
+            <section class="container">
+                <div class="introducetitle">
+                    <label for="Introduce aquí tu número">Introduce aquí tu número</label>
+                </div>
+                <div class="introduceinput">
+                    <input placeholder="Introduce  aquí tu número" id="numero" type="text" />
+                </div>
+                <div class="submitbutton">
+                    <input type="submit" value="Prueba" />
+                </div>
 
-        <label for="Introduce aquí tu número">Introduce aquí tu número</label>
-        <input placeholder="Introduce  aquí tu número" id="numero" type="text" value="value" />
-        <input type="submit" value="Prueba" />
-
-        <!-- <label for="Pista: escribe el número y dale a prueba"></label> -->
-        <input placeholder="Pista: Escribe el número y dale a Prueba" id="pista" type="text" />
-        <input placeholder="Número de intentos: 0">
-
-
+                <div class="containerpista">
+                    <input placeholder="Pista: Escribe el número y dale a Prueba" id="pista" type="text" />
+                    <input placeholder="Número de intentos: 0">
+                </div>
+            </section>
+        </form>
     </body>
 
     <script type="text/javascript" src="main.js"></script>
