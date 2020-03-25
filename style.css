@@ -10,3 +10,9 @@
   display: flex;
   flex-direction: column;
 }
+.pista {
+  border: 2px solid grey;
+}
+.intentos {
+  border: 2px solid grey;
+}

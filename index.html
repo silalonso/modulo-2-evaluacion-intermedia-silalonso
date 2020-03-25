@@ -15,21 +15,23 @@
     </header>
 
     <body>
-        <form action="/signup" method="post">
+        <form>
             <section class="container">
                 <div class="introducetitle">
                     <label for="Introduce aquí tu número">Introduce aquí tu número</label>
                 </div>
                 <div class="introduceinput">
-                    <input placeholder="Introduce  aquí tu número" id="numero" type="text" />
+                    <input class="numero" placeholder="Introduce  aquí tu número" type="text" />
                 </div>
-                <div class="submitbutton">
+                <div class="js-submitbutton">
                     <input type="submit" value="Prueba" />
                 </div>
 
                 <div class="containerpista">
-                    <input placeholder="Pista: Escribe el número y dale a Prueba" id="pista" type="text" />
-                    <input placeholder="Número de intentos: 0">
+                    <p class="pista">Pista: <span class="js-feedback">Escribe el número y dale a Prueba"</span></p>
+                    <p class="intentos">Número de intentos:<span class="js-intentos">0</span></p>
+                    <!-- estos <p> los tenía antes como <input>, pero no tenía sentido, porque no iban a recoger ningún dato -->
+                    <!-- los <span> contienen la parte cambiante -->
                 </div>
             </section>
         </form>
